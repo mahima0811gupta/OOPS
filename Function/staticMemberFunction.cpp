@@ -6,7 +6,7 @@ class Test {
     static int count;
 public:
     static void showCount() {   // static function
-        cout << "Count = " << count << endl;
+        cout<< "Count = " << count << endl;
     }
 };
 

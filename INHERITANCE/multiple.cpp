@@ -23,6 +23,7 @@ class Humen{
     }
 };
 /////multiple inheritance
+
 class Hybrid:public Animal,public Humen{
     public:
     int color;

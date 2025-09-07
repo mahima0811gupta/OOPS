@@ -1,5 +1,6 @@
 // for hiding data for security
-//encapulatsion -unt testing
+/// binding data and function together
+//encapulatsion -unit     testing
 #include<iostream>
 using namespace std;
 class Student{

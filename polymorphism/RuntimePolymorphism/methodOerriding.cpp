@@ -12,32 +12,31 @@
 // With virtual keyword → derived class function executes (runtime polymorphism).
 
 
-#include<iostream>
+
+
+
+#include <iostream>
 using namespace std;
-class Animal {
-    public:
-    void speak() {
-        cout << "Speaking "<< endl;
+
+class Base {
+public:
+    virtual void show() {   // virtual keyword
+        cout << "Base class show()" << endl;
     }
 };
 
-class Dog: public Animal {
-
-    public:
-    void speak() {
-        cout << "Barking " << endl;
+class Derived : public Base {
+public:
+    void show() override {  // overriding base function
+        cout << "Derived class show()" << endl;
     }
-
-
 };
-
-
 
 int main() {
+    Base* ptr;
+    Derived d;   ///object of derived class
+    ptr = &d;
+    ptr->show();  // Output: Derived class show() (late binding)
 
-    Dog obj;
-    obj.speak();
-
+    return 0;
 }
-
-

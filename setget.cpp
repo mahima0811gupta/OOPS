@@ -22,8 +22,6 @@ class Hero{
   }
 };
 
-
-
 int main(){
     //creating object
     Hero ram;

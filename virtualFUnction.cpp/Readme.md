@@ -31,4 +31,5 @@ class Base {
 public:
     virtual void display() = 0;   // pure virtual function
 };
+
 A class containing at least one pure virtual function is called an abstract class.

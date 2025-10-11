@@ -57,3 +57,13 @@ strcopy(this->names, names);
  
 The above code shows deep copying.
 
+
+
+| Feature           | Shallow Copy                   | Deep Copy                    |
+| ----------------- | ------------------------------ | ---------------------------- |
+| Memory Allocation | Copies only pointer            | Allocates new memory         |
+| Independence      | Both objects share same data   | Each object has its own data |
+| Implementation    | Done automatically by compiler | Must be implemented manually |
+| Side Effects      | Changing one affects other     | Independent changes          |
+
+

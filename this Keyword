@@ -1,0 +1,29 @@
+this keyword is a pointer that points to the current object for which a member function is being called. It is implicitly passed to every non-static member function.
+
+Uses of this keyword:
+
+To differentiate between data members and local variables/parameters with the same name. This is commonly seen in parameterized constructors and setters.
+
+To return the current object.
+
+Code Example: this Keyword
+
+(Refer to the parameterized constructors in the previous section where this->health = health; is used. This differentiates the class's health member from the health parameter.)
+
+#include <iostream>
+
+class Hero {
+public:
+    int health;
+    Hero(int health) {
+        // std::cout << "Address of current object: " << this << std::endl;
+        this->health = health; // 'this->health' refers to the object's health, 'health' refers to the parameter
+    }
+};
+
+int main() {
+    Hero ramesh(100);
+    // std::cout << "Address of ramesh: " << &ramesh << std::endl;
+    // You'd see that 'this' inside the constructor for 'ramesh' holds the same address as &ramesh.
+    return 0;
+}

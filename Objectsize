@@ -1,0 +1,58 @@
+#The size of an object is determined by the size of its data members.
+
+#include <iostream>
+
+class Hero {
+public:
+    int health; // 4 bytes
+};
+
+int main() {
+    Hero h1;
+    std::cout << "Size of h1: " << sizeof(h1) << std::endl; // Output: Size of h1: 4 (bytes)
+    return 0;
+}
+
+Empty Class Size
+If a class has no data members (it's an empty class), its object will still occupy 1 byte of memory. This 1 byte is for its unique identification and to ensure that different objects have distinct memory addresses.
+
+#include <iostream>
+
+class EmptyHero {
+    // No data members
+};
+
+int main() {
+    EmptyHero eh1;
+    std::cout << "Size of EmptyHero object: " << sizeof(eh1) << std::endl; // Output: Size of EmptyHero object: 1 (byte)
+    return 0;
+}          
+
+
+
+Object Memory Allocation (Behind the Scenes)
+When you create an object, memory is allocated for its properties.
+
+Consider a Hero class with int health and char level. An int takes 4 bytes and a char takes 1 byte. You might expect the object size to be 5 bytes (4 + 1). However, the actual size can be more due to padding and greedy alignment. 
+imp
+“Padding is the extra unused bytes added by the compiler to align data properly in memory, and greedy alignment ensures the total object size is a multiple of the largest data type to make memory access faster.”                   
+
+
+#include <iostream>
+
+class HeroWithPadding {
+public:
+    int health; // 4 bytes
+    char level; // 1 byte
+    // Expected size: 5 bytes, Actual size might be 8 bytes due to padding
+};
+
+int main() {
+    HeroWithPadding hwp;
+    std::cout << "Size of HeroWithPadding object: " << sizeof(hwp) << std::endl;
+    // Output often shows 8 bytes on many systems due to alignment.
+
+    // Homework: Research "padding" and "greedy alignment" in C++
+    // This is crucial for understanding how compilers optimize memory access by aligning data.
+    return 0;
+}

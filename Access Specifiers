@@ -1,0 +1,63 @@
+Access modifiers (or access specifiers) define the accessibility of class members (data members and member functions) from different parts of the program. They are fundamental to encapsulation by allowing data hiding.
+
+1. public
+Visibility: Members declared public are accessible from anywhere – both inside and outside the class. They form the interface of the class, defining how external code interacts with objects.
+class person{    
+public:    
+string name;
+};
+
+
+2.Private: All the class members with a private modifier can only be accessed by the member function inside the class.
+class person{    
+private:    
+int fb_password;
+};
+
+3.Protected: The access level of a protected modifier is within the class and outside the class through child class (or subclass). If you do not make the child class, it cannot be accessed outside the class.
+ class person{    
+protected:    
+string assets;
+};
+
+
+
+By default, in C++, all class members are private if you don't specify an access specifier.
+class person{    
+int name; 
+//by default, it is a private data member
+};
+
+
+Example using smartphone class:-
+
+class smartphone {    
+    // Data members    
+    string model;  // by default private        
+
+public:    
+    int year_of_manufacture; // public data member        
+
+protected:    
+    string company_name;  // protected data member        
+
+private:    
+    int password;  // private data member        
+
+    // Methods    
+private:    
+    void unlock_lockscreen() {     
+        // private method    
+    }
+
+public:    
+    void call() {        
+        // public method    
+    }        
+
+protected:    
+    void about_phone() {        
+        // protected method    
+    }
+};
+

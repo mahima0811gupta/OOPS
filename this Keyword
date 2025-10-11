@@ -1,17 +1,12 @@
-this keyword is a pointer that points to the current object for which a member function is being called. It is implicitly passed to every non-static member function.
+this pointer holds the address of the current object. In simple words, you can say that this pointer points to the current object of the class. 
+There can be three main usages of this keyword in C++.
+It can be used to refer to a current class instance variable.
+It can be used to pass the current object as a parameter to another method.
+It can be used to declare indexers.
 
-Uses of this keyword:
 
-To differentiate between data members and local variables/parameters with the same name. This is commonly seen in parameterized constructors and setters.
-
-To return the current object.
-
-Code Example: this Keyword
-
-(Refer to the parameterized constructors in the previous section where this->health = health; is used. This differentiates the class's health member from the health parameter.)
 
 #include <iostream>
-
 class Hero {
 public:
     int health;

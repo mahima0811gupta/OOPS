@@ -83,3 +83,14 @@ advantage of that relationship to make the program more dynamic.
 b. Inheritance helps in code reusability in child class by inheriting behavior from the parent class. On the other hand,
 polymorphism enables child class to redefine already defined behavior inside parent class.
 Without polymorphism, a child class can’t execute its own behavior.
+
+
+| **Aspect**                | **Abstraction**                                                                                                        | **Encapsulation**                                                                                                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definition**            | Abstraction is the process of **hiding unnecessary details** and showing only the **essential features** of an object. | Encapsulation is the process of **binding data members and methods** into a **single unit (class)** to protect data from outside interference. |
+| **Purpose**               | To **simplify** complex systems by showing only what’s necessary.                                                      | To **secure** data and prevent unauthorized access.                                                                                            |
+| **Implementation**        | Achieved through **abstract classes** and **interfaces**.                                                              | Achieved using **access modifiers** (`private`, `protected`, `public`).                                                                        |
+| **Focus**                 | Focuses on **what** an object does.                                                                                    | Focuses on **how** data and methods are combined together.                                                                                     |
+| **Problem Solving Level** | Solved at the **design or interface level**.                                                                           | Solved at the **implementation level**.                                                                                                        |
+| **Example**               | Showing only the “Drive” method of a car class without explaining how the engine works.                                | Wrapping the engine details (data + methods) inside a `Car` class to keep it secure from direct access.                                        |
+

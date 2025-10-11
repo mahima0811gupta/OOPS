@@ -1,0 +1,43 @@
+A destructor is a special member function that is automatically called when an object is about to be destroyed or goes out of scope. Its primary purpose 
+is to release resources (e.g., dynamically allocated memory, file handles, network connections) acquired by the object during its lifetime, preventing memory leaks and resource exhaustion.
+
+Key Characteristics:
+Has the same name as the class, prefixed with a tilde (~) (e.g., ~Hero()).
+Has no return type (not even void).
+Takes no parameters.
+A class can have only one destructor.
+If you don't define a destructor, the compiler provides a default destructor (implicit destructor). This default destructor is sufficient for classes that don't manage dynamic resources (e.g., don't use new). However, 
+for classes that use dynamic memory, a custom destructor is essential for proper resource management.
+
+When is the Destructor called?
+For statically allocated objects: Automatically when the object goes out of scope (e.g., at the end of a block, function, or main). The order of destruction is typically reverse to construction.
+For dynamically allocated objects: When delete is explicitly called on the pointer to the object. Manual deletion is crucial for heap-allocated objects to avoid memory leaks.
+
+The thing is to be noted here, if the object is created by using new or the constructor uses new to allocate memory that resides in the heap memory or the free
+store, the destructor should use delete to free the memory.   
+
+#include <iostream>
+using namespace std;
+
+class Guided_path {
+public:
+    // Constructor
+    Guided_path() {
+        cout << "Constructor is called" << endl;
+        cout << "Welcome to Guided Path" << endl;
+    }
+    
+    // Destructor
+    ~Guided_path() {
+        cout << "Happy Learning" << endl;
+        cout << "Destructor is called" << endl;
+    }
+};
+
+int main() {
+    // Object created
+    Guided_path obj;
+    // At the end, object destructed
+}
+
+Output:Constructor is called Welcome to Guided PathHappy LearningDestructor is called

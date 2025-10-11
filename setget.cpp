@@ -29,7 +29,7 @@ class Hero{
   void setHealth(int h){  //koi bhi condition lga ske set se
     health=h;
   }
-  void setHealth(char l){
+  void setLevel(char l){
     level=l;
   }
 };

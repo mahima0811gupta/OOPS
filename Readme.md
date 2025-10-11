@@ -26,4 +26,10 @@ Behaviors: attack(), defend(), dance().
 What is a Class?
 A class is a user-defined data type. Think of it as a blueprint or a template for creating objects. It defines the properties (data members) and behaviors (member functions) that all objects of that class will have. Just like int, string, or char are built-in data types, you can create your own custom data type using a class.
 
+Does every virtual function need to be always overridden?
+No, It is not always mandatory to redefine a virtual function. It can be used as it is in the base class.
+
+3. Can we have a constructor as Virtual?
+Constructors cannot be virtual because they need to be defined in the class.
+
 An object is an instance of a class. When you create an object, you are essentially creating a concrete entity based on the blueprint defined by the class.

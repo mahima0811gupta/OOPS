@@ -1,0 +1,45 @@
+An abstract class is a class from which you cannot create an object directly.
+It serves as a base class that defines a common structure or interface for its derived classes.
+An abstract class must have at least one pure virtual function.
+
+Key Properties
+✅ It can include both normal functions and variables, along with pure virtual functions.
+🚫 You can’t make an object of an abstract class.
+🧠 It’s mainly used for upcasting — treating a derived class object as a base class reference or pointer.
+⚙️ If a derived class doesn’t define all pure virtual functions, it also becomes abstract.
+
+#include <iostream>
+using namespace std;
+
+class Base {
+public:
+    // Pure Virtual Function → makes Base an abstract class
+    virtual void show() = 0;  
+};
+
+class Derived : public Base {
+public:
+    void show() {
+        cout << "Virtual Function implemented in Derived class";
+    }
+};
+
+int main() {
+    // Base b; ❌ Not allowed — cannot create an object of abstract class
+    Base *b;        // Pointer to Base class
+    Derived d_obj;  // Object of Derived class
+    b = &d_obj;     // Upcasting (Derived → Base pointer)
+    b->show();      // Calls Derived's implementation
+}
+
+Output Virtual Function implemented in Derived class
+
+
+If Derived Doesn’t Override
+
+If Derived does not provide its own version of show(), then it also becomes an abstract class — and you still can’t create an object of it.
+
+🔹 Why Abstract Classes Are Useful
+They help achieve runtime polymorphism.
+They define a blueprint or interface for all derived classes.
+They ensure consistency among related classes in a program.

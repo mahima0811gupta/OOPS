@@ -46,3 +46,6 @@ int main(){
 
 
 }
+
+Output ram health is6422356
+ram health is60

@@ -29,3 +29,11 @@ int main(){
     ram.print();
    
 }
+
+
+OUTPUT 
+this->0x61ff08
+Parameterized Constructor is called
+address of ram is 0x61ff08
+Health: 10
+Level: ï

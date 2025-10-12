@@ -20,3 +20,6 @@ int main(){
     Hero *h=new Hero;// dynamiclly
     
 }
+
+Output-Default Constructor is called
+Default Constructor is called

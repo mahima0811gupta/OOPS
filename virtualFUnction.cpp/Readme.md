@@ -4,9 +4,10 @@ A virtual function is redefined in derived class.
 When a virtual function is defined in base class, then the pointer to base class is created. Now, on the basis of type of object assigned, the respective class function is called.
 
 Base Class Pointer and Derived Object:-
-A base class pointer can point to a derived class object.
-Without virtual keyword → base class function executes.
-With virtual keyword → derived class function executes (runtime polymorphism).
+A base class pointer can point to a derived class object or base class object. 
+when is point to the derived class object -
+    Without virtual keyword → base class function executes.
+    With virtual keyword → derived class function executes (runtime polymorphism).
 
 What is Binding?
 Binding = Process of deciding which function to call.

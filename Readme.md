@@ -23,6 +23,52 @@ Programming example (Hero object in a game):
 Properties: name (Paul), health (70%), level ('A').
 Behaviors: attack(), defend(), dance().
 
+What are some advantages of using OOPs?
+Easier to manage complex programs — OOP helps in breaking big problems into smaller objects.
+
+Code reusability — We can reuse existing classes using inheritance, which saves time and reduces repetition.
+
+Data hiding — Using encapsulation, OOP keeps data safe from unwanted access.
+
+Abstraction — It hides unnecessary details and only shows what’s needed.
+
+Flexibility — With polymorphism, the same function can work in different ways.
+
+Easy maintenance — Since code is modular, fixing or updating it becomes simple.
+
+Bottom-up approach — We first create small classes and objects, then combine them to build bigger systems.
+
+Q7. Why is OOPs so popular?
+Answer:
+OOPs is popular because it makes programming simple, organized, and closer to real life.
+It helps developers write, understand, and maintain large programs easily.
+The main reason for its popularity is its four main features:
+Encapsulation – hiding data
+Abstraction – showing only important details
+Inheritance – reusing code
+Polymorphism – using one interface for different actions
+These features make OOP powerful, reusable, and easier to manage, which is why most modern languages like C++, Java, and Python use it.
+
+What are some other programming paradigms other than OOPs?
+A programming paradigm is a way to classify programming languages based on how they solve problems.
+There are mainly two types of paradigms:
+
+🔹 1. Imperative Programming Paradigm
+It focuses on how a program works — meaning it defines step-by-step instructions to change the program’s state.
+Examples:
+Procedural Programming: Uses functions or procedures (like in C).
+Object-Oriented Programming (OOP): Uses objects that hold data and behavior (like in C++, Java).
+Parallel Programming: Runs multiple tasks at the same time.
+
+🔹 2. Declarative Programming Paradigm
+It focuses on what the program should accomplish — not how to do it.
+Examples:
+Logical Programming: Based on facts and rules (e.g., Prolog).
+Functional Programming: Uses functions without changing data (e.g., Haskell, Lisp).
+Database Programming: Deals with data management using queries (e.g., SQL).
+
+🧠 In simple words:
+Imperative programming tells how to do a task (step by step), while declarative programming tells what to do without describing the steps.
 
 What is a Class?
 A class is a user-defined data type. Think of it as a blueprint or a template for creating objects. It defines the properties (data members) and
@@ -46,10 +92,18 @@ they initialize the class members and methods and therefore consume memory.
 
  
 4. Are there any limitations of Inheritance?
-Yes, with more powers comes more complications. Inheritance is a very powerful feature in OOPs, but it also has limitations.
-Inheritance needs more time to process, as it needs to navigate through multiple classes for its implementation. Also, the classes involved in Inheritance -
-the base class and the child class, are very tightly coupled together. So if one needs to make some changes, they might need to do nested changes in both classes.
- Inheritance might be complex for implementation, as well. So if not correctly implemented, this might lead to unexpected errors or incorrect outputs.
+Yes, inheritance is powerful but has some limitations:
+
+Tight Coupling:
+Base and derived classes are closely linked.
+Changing the base class may require changes in derived classes.
+Complexity:
+Large inheritance hierarchies can be hard to understand and maintain.
+Mistakes in design can lead to unexpected errors.
+Performance Overhead:
+Accessing members through multiple class levels may slow down execution.
+Implementation Challenges:
+Multiple or deep inheritance can make the code more complex and error-prone.
 
 
 6. What is the difference between overloading and overriding?
@@ -69,6 +123,7 @@ The various types of inheritance include:
  
 
 7. What are the advantages of Polymorphism?
+
 
 There are the following advantages of polymorphism in C++:
 a. Using polymorphism, we can achieve flexibility in our code because we can perform various operations by using methods with the same names according to requirements.
@@ -92,5 +147,90 @@ Without polymorphism, a child class can’t execute its own behavior.
 | **Implementation**        | Achieved through **abstract classes** and **interfaces**.                                                              | Achieved using **access modifiers** (`private`, `protected`, `public`).                                                                        |
 | **Focus**                 | Focuses on **what** an object does.                                                                                    | Focuses on **how** data and methods are combined together.                                                                                     |
 | **Problem Solving Level** | Solved at the **design or interface level**.                                                                           | Solved at the **implementation level**.                                                                                                        |
-| **Example**               | Showing only the “Drive” method of a car class without explaining how the engine works.                                | Wrapping the engine details (data + methods) inside a `Car` class to keep it secure from direct access.                                        |
+| **Example**               | Showing only the “Drive” method of a car class without explaining how the engine works.                                | Wrapping the engine details (data + methods) inside a `Car` class to keep it secure from direct access.           
 
+
+
+What are some major Object Oriented Programming languages?
+The programming languages that use and follow the Object-Oriented Programming paradigm or OOPs, are known as Object-Oriented Programming languages. Some of the major Object-Oriented Programming languages include:
+
+Java
+C++
+Javascript
+Python
+PHP
+And many more.
+
+3. What are some other programming paradigms other than OOPs?
+Programming paradigms refers to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms:
+
+Imperative Programming Paradigm
+Declarative Programming Paradigm
+Now, these paradigms can be further classified based:
+
+1. Imperative Programming Paradigm: Imperative programming focuses on HOW to execute program logic and defines control flow as statements that change a program state. This can be further classified as:
+a) Procedural Programming Paradigm: Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.
+b) Object-Oriented Programming or OOP: Object-oriented programming (OOP) organizes programs as objects, that contain some data and have some behavior.
+c) Parallel Programming: Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.
+
+2. Declarative Programming Paradigm: Declarative programming focuses on WHAT to execute and defines program logic, but not a detailed control flow. Declarative paradigm can be further classified into:
+a) Logical Programming Paradigm: Logical programming paradigm is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem
+b) Functional Programming Paradigm: Functional programming is a programming paradigm where programs are constructed by applying and composing functions.
+c) Database Programming Paradigm: Database programming model is used to manage data and information structured as fields, records, and files.
+
+ What are the main features of OOPs?
+OOPs or Object Oriented Programming mainly comprises of the below four features, and make sure you don't miss any of these:
+Inheritance
+Encapsulation
+Polymorphism
+Data Abstraction
+
+What is a subclass?
+The subclass is a part of Inheritance. The subclass is an entity, which inherits from another class. It is also known as the child class.
+
+5. Define a superclass?
+Superclass is also a part of Inheritance. The superclass is an entity, which allows subclasses or child classes to inherit from itself.
+
+How is data abstraction accomplished?
+Data abstraction is accomplished with the help of abstract methods or abstract classe
+
+Q. What is meant by Structured Programming?
+Structured programming means writing clean, step-by-step, and well-organized code using loops, conditions, and functions so it’s easier to understand and manage.
+
+QStructured Programming vs Object-Oriented Programming (OOPs)
+Structured programming focuses on functions and logic, while OOP focuses on objects and data.
+In structured programming, we use a top-down approach, but in OOP we use a bottom-up approach.
+OOP provides better code reusability, security, and flexibility using concepts like encapsulation, inheritance, and polymorphism.
+
+
+How is an abstract class different from an interface?
+| Feature                        | **Abstract Class**                                                                                   | **Interface**                                            |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Methods**                    | Can have both **abstract** and **non-abstract** methods                                              | Can only have **abstract methods** (method declarations) |
+| **Implementation Requirement** | Subclass may or must implement abstract methods; if subclass is abstract, it may skip implementation | Subclass **must implement all methods**                  |
+| **Object Creation**            | Cannot create objects                                                                                | Cannot create objects                                    |
+| **Use Case**                   | When some common implementation is shared                                                            | When you only want to define a **contract** for classes  |
+
+
+Q. How much memory does a class occupy?
+
+Answer:
+
+A class itself does not occupy memory because it is just a blueprint.
+Memory is only allocated when objects of the class are created, as the objects hold the class’s data and methods.
+
+Q. Is it always necessary to create objects from a class?
+Not always.
+If a class has non-static methods or variables, you need an object to use them.
+If a class has static methods or variables, you can use them directly with the class name without creating an object.
+
+Q Explain Inheritance with an example
+Inheritance allows a class to reuse properties and methods of another class, helping in code reuse.
+For example, a Vehicle class can have common features like steering, brakes, and accelerator, which are inherited by Car, Truck, and Bus.
+This way, each vehicle class can have its own specific features without rewriting common code.
+
+
+q.what is Abstraction 
+Abstraction is hiding unnecessary details and showing only the important features.
+It lets users focus on what an object does, not how it works internally.
+Example: Driving a car — you only need to know how to use it, not how the engine works.

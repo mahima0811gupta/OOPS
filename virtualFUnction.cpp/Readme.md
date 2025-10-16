@@ -1,3 +1,4 @@
+virual base class/virtual function---
 virtual is a keyword in C++.
 A virtual function is redefined in derived class.
 When a virtual function is defined in base class, then the pointer to base class is created. Now, on the basis of type of object assigned, the respective class function is called.
@@ -31,5 +32,5 @@ class Base {
 public:
     virtual void display() = 0;   // pure virtual function
 };
-
+It must be overridden by derived classes.
 A class containing at least one pure virtual function is called an abstract class.

@@ -233,4 +233,80 @@ This way, each vehicle class can have its own specific features without rewritin
 q.what is Abstraction 
 Abstraction is hiding unnecessary details and showing only the important features.
 It lets users focus on what an object does, not how it works internally.
-Example: Driving a car — you only need to know how to use it, not how the engine works.
+Example: Driving a car — you only need to know how to use it, not how the engine works
+
+
+What is an Exception?
+An exception is a runtime error or special event that occurs during program execution, which can stop the program if not handled.
+Example: Dividing by zero, or invalid user input.
+
+Q15. What is Exception Handling?
+Exception handling is the mechanism to catch and handle runtime errors so the program doesn’t crash.
+It defines what to do when an error occurs, usually using try-catch blocks.
+
+Purpose of Exception Handling
+To catch and handle errors so the program does not crash.
+Ensures graceful error recovery and resource management.
+
+
+1. try-catch Block (C++)
+
+Wrap the code that may cause an exception in a try block.
+
+Handle it in a catch block.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    try {
+        int x = 10, y = 0;
+        if (y == 0)
+            throw "Division by zero!";
+        int z = x / y;
+    } catch (const char* e) {
+        cout << "Error: " << e << endl;
+    }
+    return 0;
+}
+
+2. throw Keyword
+Used to manually throw an exception in C++.
+Can throw int, string, or any object.
+
+throw 404;           // throwing an integer
+throw "Error";       // throwing a string
+
+3. catch Keyword
+Catches exceptions thrown by throw.
+Can catch specific types or a general type using catch(...).
+
+catch (int e) { ... }
+catch (const char* e) { ... }
+catch (...) { ... }  // catches any exception
+
+4. finally
+C++ does NOT have a finally block like Java.
+Instead, you can use destructors or RAII (Resource Acquisition Is Initialization) to ensure cleanup.
+
+
+| Keyword           | Purpose                                  |
+| ----------------- | ---------------------------------------- |
+| `try`             | Enclose code that may throw an exception |
+| `catch`           | Handle exceptions thrown in try block    |
+| `throw`           | Raise an exception manually              |
+| RAII / Destructor | Cleanup resources (replaces `finally`)   |
+
+
+Q6. What is Garbage Collection in OOPs?
+
+Answer:
+Garbage collection is the process of automatically freeing memory used by objects that are no longer needed.
+It prevents memory leaks and ensures efficient memory management in object-oriented programs.
+
+Example: In Java, objects that are no longer referenced are automatically removed by the Garbage Collector.
+garbage collection helps manage memory by cleaning up unused objects so the program runs efficiently.
+
+Q. Can we run a Java application without OOPs?
+No, Java is fully object-oriented, so every Java program relies on classes and objects.
+In contrast, C++ can run without OOPs, because it also supports procedural programming like C.

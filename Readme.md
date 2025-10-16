@@ -310,3 +310,16 @@ garbage collection helps manage memory by cleaning up unused objects so the prog
 Q. Can we run a Java application without OOPs?
 No, Java is fully object-oriented, so every Java program relies on classes and objects.
 In contrast, C++ can run without OOPs, because it also supports procedural programming like C.
+
+
+
+What is the difference between a structure and a class in C++?
+The structure is also a user-defined datatype in C++ similar to the class with the following differences:
+The major difference between a structure and a class is that in a structure, the members are set to public by default while in a class, members are private by default.
+The other difference is that we use struct for declaring structure and class for declaring a class in C++.
+
+Q.Can we overload the constructor in a class?
+Yes We can overload the constructor in a class in Java. Constructor Overloading is done when we want constructor with different constructor with different parameter (Number and Type).
+
+QCan we overload the destructor in a class?
+No, a destructor cannot be overloaded in a class. There can only be one destructor present in a class.

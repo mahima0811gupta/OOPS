@@ -41,7 +41,14 @@ OUTPUT-Length of box: 10
 // So, it is a one-sided friendship.
 
 
+Advantages
+✅ Allows controlled access to private members
+✅ Useful for operator overloading (e.g., operator+, operator==)
+✅ Improves flexibility in certain cases
 
+⚠️ Disadvantages
+❌ Breaks encapsulation (since private data is accessible outside the class)
+❌ Harder to maintain large codebases
 Interview Questions
 
 Q1. What is a friend function in C++?

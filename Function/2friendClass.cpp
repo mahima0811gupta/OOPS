@@ -30,3 +30,18 @@ int main() {
     return 0;
 }  OUTPUT-Value of a = 5
 
+Explanation
+Class X has a private member a.
+The friend class Y; declaration gives all functions of class Y access to the private and protected members of X.
+Hence, Y::show() can directly access obj.a.
+
+
+ dvantages
+✅ Provides controlled access to private data.
+✅ Avoids repeated friend declarations for multiple functions.
+✅ Useful for related classes that frequently interact.
+
+⚠️ Disadvantages
+❌ Breaks encapsulation (private data becomes accessible outside).
+❌ Increases coupling between classes (tight dependency).
+❌ Can make debugging and maintenance harder in large projects.   

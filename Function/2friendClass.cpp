@@ -28,4 +28,5 @@ int main() {
     Y y1;
     y1.show(x1);  // Y can access X's private data
     return 0;
-}
+}  OUTPUT-Value of a = 5
+

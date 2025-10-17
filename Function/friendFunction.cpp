@@ -32,6 +32,7 @@ int main() {
     show(b1);  // called like normal function
     return 0;
 }
+OUTPUT-Length of box: 10
 
 
 // Friendship is one-way (not mutual).

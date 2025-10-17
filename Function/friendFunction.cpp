@@ -8,7 +8,7 @@ It is declared inside the class using the keyword friend.
     // 2. Key Points
 // A friend function cannot be called using an object of the class.
 // It is called like a normal function.
-// A friend function can access the private/protected resources of a class, but it needs an object of that class.
+// A friend function can access the private/protected resources of a class, only using object of the same class
 // A friend function is declared inside the class using the friend keyword and friend function has object as a argyment
 
 #include <iostream>

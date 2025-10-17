@@ -36,3 +36,22 @@ int main() {
 // If X declares Y as a friend, Y can access X’s private members.
 // But the reverse is not true unless explicitly declared.
 // So, it is a one-sided friendship.
+
+
+
+Interview Questions
+
+Q1. What is a friend function in C++?
+👉 A non-member function that can access private and protected members of a class.
+
+Q2. Does a friend function violate encapsulation?
+👉 Yes, partially, because it allows external access to private data.
+
+Q3. How do you define a friend function?
+👉 Declare it inside the class with the friend keyword and define it normally outside.
+
+Q4. Can a friend function be inherited?
+👉 ❌ No, it is not inherited by derived classes.
+
+Q5. Can we call a friend function using an object?
+👉 ❌ No, since it is not a member function, it is called like a normal function

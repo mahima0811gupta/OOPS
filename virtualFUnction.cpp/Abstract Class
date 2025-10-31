@@ -26,10 +26,10 @@ public:
 
 int main() {
     // Base b; ❌ Not allowed — cannot create an object of abstract class
-    Base *b;        // Pointer to Base class
-    Derived d_obj;  // Object of Derived class
-    b = &d_obj;     // Upcasting (Derived → Base pointer)
-    b->show();      // Calls Derived's implementation
+    Base *ptr;        // Pointer to Base class
+    Derived d;  // Object of Derived class
+    ptr = &d;     // Upcasting (Derived → Base pointer)
+    ptr->show();      // Calls Derived's implementation
 }
 
 Output Virtual Function implemented in Derived class

@@ -23,6 +23,16 @@ int main() {
     Derived d;   ///object of derived class
     ptr = &d;
     ptr->show();  // Output: Derived class show() (late binding)
+    
 
     return 0;
 }
+
+
+// 💡 Why do we use &d here?
+// Because:
+// ptr is a pointer to a Base object.
+// d is an object, not a pointer.
+// 👉 To make a pointer point to an object, you must use the address-of operator (&).
+// So:
+// ptr = &d;  // store the address of 'd' in the base class pointer

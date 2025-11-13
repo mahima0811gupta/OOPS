@@ -11,22 +11,49 @@ A shallow copy can be made by simply copying the reference.
 
 Example:
 
-class students(){    
-int age;    
-char * names;        
-public:    
+#include <iostream>
+using namespace std;
 
-students(int age, char * names)
-{        
-this->age = age;        
-// shallow copy        
-this->names = names;         
+class Demo {
+public:
+    int x;
+    int *y;  // pointer
 
-// here we are putting the same array.        
-// we are just copying the reference    
-}
+    Demo(int a, int b) {
+        x = a;
+        y = new int(b);
+    }
 };
-The above code shows shallow copying.
+
+int main() {
+
+    Demo obj1(10, 20);
+
+    // Shallow Copy (default copy constructor)
+    Demo obj2 = obj1;
+
+    cout << "Before change:" << endl;
+    cout << "obj1.y = " << *obj1.y << endl;
+    cout << "obj2.y = " << *obj2.y << endl;
+
+    // Change obj2
+    *obj2.y = 99;
+
+    cout << "\nAfter change in obj2.y:" << endl;
+    cout << "obj1.y = " << *obj1.y << endl;
+    cout << "obj2.y = " << *obj2.y << endl;
+
+    return 0;
+}
+⭐ Output (Concept)
+obj1.y = 20
+obj2.y = 20
+
+After change:
+obj1.y = 99   <-- changed!
+obj2.y = 99
+
+
 
 
 Deep Copy
@@ -37,25 +64,12 @@ A deep copy means creating a new array and copying over the values.
 Changes to the array values referred to will not result in changes to the array data referred to.
 
  
+obj1.y = 20
+obj2.y = 20
 
-Example:
-
-class student(){    
-int age;    
-char * names;        
-public:    
-student(int age, char * names)
-{        
-this->age = age;                
-//deep copy        
-this->names = new char[strlen(names) + 1];        
-strcopy(this->names, names);        
-
-//Created new array and copied data    
-}
-};
- 
-The above code shows deep copying.
+After change:
+obj1.y = 20   <-- not changed
+obj2.y = 99
 
 
 

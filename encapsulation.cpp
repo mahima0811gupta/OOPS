@@ -23,22 +23,28 @@ Benefit	Description
 
 
   
-#include<iostream>
+  #include <iostream>
 using namespace std;
-class Student{
-  private:
-    string name;
-    int age;
-    int height;
 
-    public:
-    int getAge(){
-        return this->age;
+class Person {
+private:
+    int age;          // hidden data
+
+public:
+    // set age
+    void setAge(int a) {
+        age = a;
+    }
+
+    // get age
+    int getAge() {
+        return age;
     }
 };
-    int main(){
-        Student s1;
-      cout<<s1.getAge()<<endl;
-    
-return 0;
-    }
+
+int main() {
+    Person p;
+
+    p.setAge(20);          // set value
+    cout << p.getAge();    // get value
+}

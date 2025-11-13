@@ -31,6 +31,9 @@ int main(){
 //  obj.func;
 obj.A::func();
 obj.B::func();
+
+    output-I am A
+           I am B
    
 
 

@@ -211,32 +211,8 @@ How is an abstract class different from an interface?
 | **Object Creation**            | Cannot create objects                                                                                | Cannot create objects                                    |
 | **Use Case**                   | When some common implementation is shared     | When you only want to define a **contract** for classes  |
 
-╔══════════════════════════════════════════════════════════════════╗
-║                    ABSTRACT CLASS vs INTERFACE                   ║
-╠══════════════════════════════════════════════════════════════════╣
-║ 1. Nature                                                        ║
-║    • Abstract Class → A class with abstract + normal methods     ║
-║    • Interface      → Only method declarations (rules/contract) ║
-╠══════════════════════════════════════════════════════════════════╣
-║ 2. Variables                                                     ║
-║    • Abstract Class → Can have normal, final, non-final vars    ║
-║    • Interface      → Only public static final variables        ║
-╠══════════════════════════════════════════════════════════════════╣
-║ 3. Inheritance                                                  ║
-║    • Abstract Class → Single inheritance only                   ║
-║    • Interface      → Supports multiple inheritance             ║
-╠══════════════════════════════════════════════════════════════════╣
-║ 4. Constructors                                                 ║
-║    • Abstract Class → Can have constructors                     ║
-║    • Interface      → No constructors                           ║
-╠══════════════════════════════════════════════════════════════════╣
-║ 5. Use Case                                                     ║
-║    • Abstract Class → When you need partial implementation      ║
-║    • Interface      → When you want to define only rules        ║
-╠══════════════════════════════════════════════════════════════════╣
-║ ✔ Abstract Class = Partial Implementation                       ║
-║ ✔ Interface      = Full Abstraction + Multiple Inheritance      ║
-╚══════════════════════════════════════════════════════════════════╝
+<img width="664" height="705" alt="image" src="https://github.com/user-attachments/assets/3a87af22-3164-4a61-9e3f-6352e6d456b8" />
+
 
 
 Q. How much memory does a class occupy?

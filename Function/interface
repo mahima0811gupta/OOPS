@@ -1,0 +1,89 @@
+C++ does not have a direct interface keyword like Java.
+But you can create an interface using a class that contains only pure virtual functions.
+
+✔ No normal functions
+✔ No data members
+✔ Only pure virtual functions (= 0)
+✔ You cannot create objects of an interface
+✔ Any class that inherits must override all functions
+
+Such a class acts exactly like an interface.
+
+✅ Simple C++ Interface Example
+#include <iostream>
+using namespace std;
+
+// Interface in C++ → class with ONLY pure virtual functions
+class Shape {
+public:
+    virtual void draw() = 0;     
+    virtual void area() = 0;     
+};
+
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing Circle" << endl;
+    }
+    void area() {
+        cout << "Area = πr²" << endl;
+    }
+};
+
+class Rectangle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing Rectangle" << endl;
+    }
+    void area() {
+        cout << "Area = length × breadth" << endl;
+    }
+};
+
+int main() {
+    Shape* s;
+
+    Circle c;
+    Rectangle r;
+
+    s = &c;
+    s->draw();
+    s->area();
+
+    s = &r;
+    s->draw();
+    s->area();
+}
+
+📌 Output
+Drawing Circle
+Area = πr²
+Drawing Rectangle
+Area = length × breadth
+
+🔑 Key Points (Easy English)
+
+An interface in C++ is created by using a class with only pure virtual functions.
+You cannot create objects of an interface.
+A derived class must implement all the pure virtual functions, otherwise it also becomes abstract.
+Interface is used to achieve runtime polymorphism.
+
+
+
+
+Difference Between Abstract Class and Interface (C++)
+
+| Feature                             | Abstract Class                                                                   | Interface (in C++)                                                            |
+| ----------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Definition**                      | A class that can have both normal functions and pure virtual functions           | A class that contains **only pure virtual functions**                         |
+| **Object Creation**                 | Cannot create objects                                                            | Cannot create objects                                                         |
+| **Functions Allowed**               | Normal functions + pure virtual functions                                        | Only pure virtual functions                                                   |
+| **Data Members**                    | Can have data members                                                            | Cannot have data members                                                      |
+| **Constructor / Destructor**        | Yes, can have constructors and destructors                                       | No constructors or destructors                                                |
+| **Multiple Inheritance**            | A class can inherit only one abstract class (if using normal single inheritance) | A class can inherit multiple interfaces                                       |
+| **Use Case**                        | When you want to provide **common code + a blueprint**                           | When you want to provide only **a complete blueprint** (no implementation)    |
+| **Implementation in Derived Class** | Must implement only the pure virtual functions                                   | Must implement **all functions** because all are pure virtual                 |
+| **Keyword**                         | No special keyword; just one pure virtual function                               | No special keyword; interface is created by making all functions pure virtual |
+
+
+A class can inherit multiple interfaces in C++.

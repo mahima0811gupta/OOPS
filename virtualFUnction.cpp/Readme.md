@@ -35,3 +35,9 @@ public:
 };
 It must be overridden by derived classes.
 A class containing at least one pure virtual function is called an abstract class.
+
+
+INTERFACE-an interface represents a contract or blueprint that defines WHAT a class must do, but not HOW it does it.
+It only defines function names, parameters, and expected behavior.
+Actual implementation is left to the classes that inherit the interface.
+This helps developers build software that is modular, testable, and extendable.

@@ -1,32 +1,32 @@
 
-// operator overloading allows us to redefine the meaning of operators (like +, -, *, <<, etc.) for user-defined data types (like classes).
-//  Basically, we make operators work with objects.
-// Some operators like ::, sizeof, ?:, and . cannot be overloaded.
+Operator Overloading means giving additional meaning to an existing operator so that it can work with user-defined data types (classes/objects).
+Example:
++ normally works only with built-in data types like int, float, double, etc.
+But if you want the same + operator to add two objects, you must overload it.
 
-#include<iostream>
+
+
+#include <iostream>
 using namespace std;
 
-class B {
-    public:
-    int a;
-    int b;
+class Add {
+public:
+    int x;
 
-    public: 
-    int add() {
-        return a+b;
+    Add operator+(Add obj) {
+        Add temp;
+        temp.x = x + obj.x;   // add values of both objects
+        return temp;
     }
-
-    void operator+ (B &obj) {
-/*        int value1 = this -> a;
-        int value2 = obj.a;
-        cout << "output " << value2 - value1 << endl; 
-        */
-
-       cout << "Hello Babbar" << endl;
-    }
-
-    void operator() () {
-        cout << "main Bracket hu " << this->a << endl;
-    }
-
 };
+
+int main() {
+    Add a, b, c;
+
+    a.x = 5;
+    b.x = 10;
+
+    c = a + b;  // calls operator+
+
+    cout << c.x;  // prints 15
+}

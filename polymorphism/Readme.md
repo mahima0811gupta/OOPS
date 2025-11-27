@@ -1,6 +1,5 @@
 Polymorphism means one action, many forms.
 It allows the same function or operator to behave differently based on the object or data type it is working with.
-
 For example, the word “draw()” may mean drawing a circle for one object and drawing a rectangle for another.
 This makes programs more flexible and easier to maintain.
 

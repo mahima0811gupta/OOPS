@@ -10,7 +10,10 @@ Achieved through:
 Function Overloading –
 When multiple functions have the same name but different parameters.
 
-Operator Overloading – When existing operators (like +, -, *) are given new meanings for user-defined types (like objects).
+Operator Overloading – 
+// operator overloading allows us to redefine the meaning of operators (like +, -, *, <<, etc.) for user-defined data types (like classes).
+//  Basically, we make operators work with objects.
+// Some operators like ::, sizeof, ?:, and . cannot be overloaded.
 🟢 Example idea: Using + for adding two complex numbers or concatenating two strings.
 
 2. Runtime Polymorphism (Dynamic Polymorphism)

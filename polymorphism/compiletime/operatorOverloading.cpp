@@ -11,14 +11,25 @@ using namespace std;
 
 class Add {
 public:
-    int x;
+    int x;             //     The class has one variable: x Every object (a, b, c) will have its own x.
 
     Add operator+(Add obj) {
         Add temp;
-        temp.x = x + obj.x;   // add values of both objects
+        temp.x = x + obj.x;   // add values of both objects                       
         return temp;
     }
 };
+// happens here?
+// When you write a + b, C++ calls this function.
+// a is the calling object
+// b goes into obj
+// Inside the function:
+
+// x → means a.x
+// obj.x → means b.x
+// So temp.x = a.x + b.x
+// Finally, temp is returned.
+
 
 int main() {
     Add a, b, c;

@@ -5,21 +5,17 @@ Example:
 But if you want the same + operator to add two objects, you must overload it.
 
 
-
 #include <iostream>
 using namespace std;
 
 class Add {
 public:
     int x;             //     The class has one variable: x Every object (a, b, c) will have its own x.
-
    Add operator+(Add b) {
     Add c; 
     c.x = x + b.x;
     return c;
-}
-
-};
+}};
 // This function runs when you write:
 // a + b
 // Inside the function:
@@ -30,7 +26,6 @@ public:
 
 int main() {
     Add a, b, c;
-
     a.x = 5;
     b.x = 10;
 

@@ -13,23 +13,20 @@ class Add {
 public:
     int x;             //     The class has one variable: x Every object (a, b, c) will have its own x.
 
-    Add operator+(Add obj) {
-        Add temp;
-        temp.x = x + obj.x;   // add values of both objects                       
-        return temp;
-    }
+   Add operator+(Add b) {
+    Add c; 
+    c.x = x + b.x;
+    return c;
+}
+
 };
-// happens here?
-// When you write a + b, C++ calls this function.
-// a is the calling object
-// b goes into obj
+// This function runs when you write:
+// a + b
 // Inside the function:
-
-// x → means a.x
-// obj.x → means b.x
-// So temp.x = a.x + b.x
-// Finally, temp is returned.
-
+// x means a.x (value of first object)
+// b.x means b.x (value of second object)
+// So this line:
+// c.x = x+ b.x;
 
 int main() {
     Add a, b, c;

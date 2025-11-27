@@ -3,21 +3,30 @@
 // Same function name, but different argument list (number or type).
 // Cannot overload only by changing return type.
 
-#include <iostream>
-using namespace std;
-
-class Print {
+class Geeks {
 public:
-    void show(int x) {
-        cout << "Integer: " << x << endl;
+    
+    // Function to add two integers
+    void add(int a, int b) {
+        cout << "Integer Sum = " << a + b
+        << endl;
     }
-    void show(double y) {
-        cout << "Double: " << y << endl;
+    
+    // Function to add two floating point values
+    void add(double a, double b) {
+        cout << "Float Sum = " << a + b
+        << endl ;
     }
 };
 
 int main() {
-    Print p;
-    p.show(10);     
-    p.show(3.14);   
+    Geeks gfg;
+    
+    // add() called with int values
+    gfg.add(10, 2);
+
+    // add() called with double value
+    gfg.add(5.3, 6.2);
+
+    return 0;
 }

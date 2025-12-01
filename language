@@ -15,3 +15,32 @@ Because Java code is compiled into bytecode, and this bytecode runs on the JVM, 
 🔹 Python – Platform Independent
 
 Because Python code is converted into bytecode (.pyc), and it runs on the Python interpreter available on all platforms.
+
+
+17. What is namespace?
+
+A namespace is a container that groups names (like classes, functions, variables) to avoid name conflicts in large programs.
+Example: std is a namespace in C++.
+
+✅ 18. What is this pointer?
+
+this is a special pointer inside a class that stores the address of the current object.
+Used to access the current object's variables and methods.
+
+✅ 19. What is reference variable?
+
+A reference variable is another name/alias for an existing variable.
+It does not store its own value; it refers to the original variable.
+
+Example:
+
+int a = 10;
+int &ref = a;   // ref is a reference to a
+
+✅ 20. Difference between C and C++? (Short Answer)
+C	C++
+Procedural programming language	Object-oriented + procedural
+No classes, objects	Supports classes, objects, OOP
+Does not support function overloading	Supports function/function overloading
+No namespace	Has namespace
+Less secure	More secure due to encapsulatio

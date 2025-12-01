@@ -19,8 +19,7 @@ Because Python code is converted into bytecode (.pyc), and it runs on the Python
 
 17. What is namespace?
 
-A namespace is a container that groups names (like classes, functions, variables) to avoid name conflicts in large programs.
-Example: std is a namespace in C++.
+A namespace is a container that that holds a group of names -  like variables, functions, or classes - to avoid confusion when we have the same name used in different parts of the program.
 
 ✅ 18. What is this pointer?
 

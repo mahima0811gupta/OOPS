@@ -133,3 +133,9 @@ Inheritance allows one class to acquire properties and methods of another class.
 
 ✅ 20. What is exception handling?
 Exception handling manages runtime errors using try, except, finally so the program doesn't crash.
+
+
+What is a Decorator? (Simple Meaning)
+
+A decorator is a function that adds extra features to another function without changing its original code.“A decorator is a special Python function that modifies or 
+enhances another function’s behavior without changing its actual code.”

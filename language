@@ -22,9 +22,14 @@ Because Python code is converted into bytecode (.pyc), and it runs on the Python
 A namespace is a container that that holds a group of names -  like variables, functions, or classes - to avoid confusion when we have the same name used in different parts of the program.
 
 ✅ 18. What is this pointer?
+"A pointer is a variable that stores the memory address of another variable. It is used for efficient memory access, dynamic memory allocation, and creating data structures like linked lists."
+Call by Value:
+Copy of value is sent
+Original value does not change
 
-this is a special pointer inside a class that stores the address of the current object.
-Used to access the current object's variables and methods.
+Call by Reference (using pointers):
+Address is sent
+Original value changes
 
 ✅ 19. What is reference variable?
 
@@ -136,104 +141,3 @@ Inheritance allows one class to acquire properties and methods of another class.
 ✅ 20. What is exception handling?
 
 Exception handling manages runtime errors using try, except, finally so the program doesn't crash.
-
-If you want, I can also give:
-📌 One-line MCQs
-📌 Small coding examples
-📌 A PDF of all 20 answers
-📌 Java/C/C++ similar answers
-
-You said:
-explain for interview
-ChatGPT said:
-
-Below are perfect interview-style explanations for all 20 Python questions — short, clear, and spoken-answer style.
-This is exactly how you should answer in a campus placement interview.
-
-✅ 1. What is Python?
-
-Python is a high-level, easy-to-read programming language used for web development, data science, automation, AI, and many more applications.
-
-✅ 2. Why is Python called an interpreted language?
-
-Python is called interpreted because the code runs line by line using the Python interpreter, not directly compiled into machine code.
-
-✅ 3. What are variables?
-
-Variables are names used to store data in memory so we can use and modify it in a program.
-
-✅ 4. What is indentation in Python?
-
-Indentation means spaces at the start of a line.
-Python uses indentation to define code blocks instead of braces {}. It controls program structure.
-
-✅ 5. What are data types in Python?
-
-Data types specify the type of value a variable holds.
-Common types: int, float, str, bool, list, tuple, set, dict.
-
-✅ 6. What is a list?
-
-A list is an ordered collection that is mutable, meaning we can change, add, or remove items.
-
-✅ 7. What is a tuple?
-
-A tuple is also an ordered collection but immutable, so once created, its values cannot be changed.
-
-✅ 8. Difference between list and tuple?
-
-Lists can be modified (mutable), while tuples cannot be modified (immutable).
-Lists use [], tuples use ().
-
-✅ 9. What is a dictionary?
-
-A dictionary stores data in key–value pairs.
-It is useful when we want to access values using a unique key.
-
-✅ 10. What is a set?
-
-A set is an unordered collection of unique elements.
-It automatically removes duplicates.
-
-✅ 11. What is a function in Python?
-
-A function is a reusable block of code that performs a specific task and is called whenever needed.
-
-✅ 12. What is a lambda function?
-
-A lambda is a small, anonymous function written in one line, usually for short operations.
-
-✅ 13. What is a module?
-
-A module is a Python file that contains code such as functions, classes, or variables.
-
-✅ 14. What is a package?
-
-A package is a folder containing multiple modules, along with an __init__.py file to mark it as a package.
-
-✅ 15. What is OOP in Python?
-
-Object-Oriented Programming organizes code into classes and objects, making it reusable, modular, and easier to maintain.
-
-✅ 16. What is a class?
-
-A class is a blueprint for creating objects.
-It defines properties (variables) and behaviors (methods).
-
-✅ 17. What is an object?
-
-An object is an instance of a class, representing a real-world entity with data and functionality.
-
-✅ 18. What is a constructor (__init__)?
-
-__init__ is a special method that runs automatically when an object is created.
-It initializes the object’s variables.
-
-✅ 19. What is inheritance?
-
-Inheritance allows one class (child class) to use the properties and methods of another class (parent class), promoting code reuse.
-
-✅ 20. What is exception handling?
-
-Exception handling prevents the program from crashing during runtime errors.
-We use try, except, finally to handle errors gracefully.

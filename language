@@ -107,37 +107,29 @@ A function is a block of code that performs a specific task and is reused when c
 
 ✅ 12. What is lambda function?
 
-A lambda is a small anonymous function defined using one line.
+A lambda is a small anonymous (without name) function defined using one line.It is used when you need a small function for a short time.
 Example: lambda x: x * 2
 
 ✅ 13. What is module?
-
 A module is a Python file containing functions, classes, or variables.
 
 ✅ 14. What is package?
-
 A package is a collection of modules stored in a folder with an __init__.py file.
 
 ✅ 15. What is OOP in Python?
-
 OOP (Object-Oriented Programming) is a programming approach based on objects and classes.
 
 ✅ 16. What is class?
-
 A class is a blueprint used to create objects.
 
 ✅ 17. What is object?
-
 An object is an instance of a class that has data and behavior.
 
 ✅ 18. What is constructor (__init__)?
-
 __init__ is a special method that automatically runs when an object is created to initialize variables.
 
 ✅ 19. What is inheritance?
-
 Inheritance allows one class to acquire properties and methods of another class.
 
 ✅ 20. What is exception handling?
-
 Exception handling manages runtime errors using try, except, finally so the program doesn't crash.

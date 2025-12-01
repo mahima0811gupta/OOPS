@@ -1,0 +1,17 @@
+✅ Platform Dependent vs Platform Independent (Short Notes)
+🔹 C – Platform Dependent
+
+Because C compiles code into machine code specific to the operating system.
+
+🔹 C++ – Platform Dependent
+
+Same as C.
+C++ also generates OS-specific machine code, so it cannot run on another platform.
+
+🔹 Java – Platform Independent
+
+Because Java code is compiled into bytecode, and this bytecode runs on the JVM, which is available on all platforms.
+
+🔹 Python – Platform Independent
+
+Because Python code is converted into bytecode (.pyc), and it runs on the Python interpreter available on all platforms.

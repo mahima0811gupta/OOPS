@@ -11,7 +11,6 @@ It is used to initialize the object's data members.
 
 Types of Constructors
 1 Default Constructor:
-
 It has no parameters.
 If you don't define any constructor for a class, the compiler automatically provides a public default constructor (known as the implicit default constructor).
 If you define any constructor (default or parameterized), the compiler will not provide the implicit default constructor. You'll need to define it explicitly if you want it.

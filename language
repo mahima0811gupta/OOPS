@@ -139,3 +139,23 @@ What is a Decorator? (Simple Meaning)
 
 A decorator is a function that adds extra features to another function without changing its original code.“A decorator is a special Python function that modifies or 
 enhances another function’s behavior without changing its actual code.”
+
+21Generator (in very simple English):
+
+A generator in Python is a function that gives values one at a time instead of all at once.
+It uses the keyword yield.
+
+def gen():
+    yield 1
+    yield 2
+
+
+Meaning:
+
+First call → returns 1
+
+Next call → returns 2
+
+One-line answer:
+
+A generator is a function that produces values one by one using yield, saving memory.

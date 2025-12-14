@@ -1,0 +1,88 @@
+Abstraction in C++
+
+Abstraction means showing only important details and hiding implementation details from the user.
+
+👉 In simple words:
+What to do is shown, how it is done is hidden.
+
+🔸 How Abstraction is Achieved in C++
+
+Abstraction in C++ is mainly achieved using:
+
+Abstract Classes
+
+Interfaces (using pure virtual functions)
+
+🔹 1. Abstract Class
+
+A class that contains at least one pure virtual function is called an abstract class.
+
+🔸 Pure Virtual Function
+virtual void functionName() = 0;
+
+✅ Example
+#include <iostream>
+using namespace std;
+
+class Shape {   // Abstract class
+public:
+    virtual void draw() = 0;   // Pure virtual function
+};
+
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing Circle";
+    }
+};
+
+int main() {
+    Shape* s;
+    Circle c;
+    s = &c;
+    s->draw();
+}
+
+🧠 Explanation
+
+Shape defines what to do (draw)
+
+Circle defines how to do it
+
+User only interacts with Shape
+
+🔹 2. Interface in C++ (Concept)
+
+C++ doesn’t have a keyword interface like Java,
+but we can simulate interfaces using only pure virtual functions.
+
+✅ Example
+class Vehicle {
+public:
+    virtual void start() = 0;
+    virtual void stop() = 0;
+};
+
+🔸 Real-Life Example
+
+ATM Machine
+
+User sees: Withdraw, Deposit, Balance
+
+User doesn’t see: Bank server logic
+
+🔹 Advantages of Abstraction
+
+✔ Reduces complexity
+✔ Improves security
+✔ Helps in code reusability
+✔ Easier maintenance
+
+🔹| Feature        | **Abstraction**                  | **Encapsulation**                                    |
+| -------------- | -------------------------------- | ---------------------------------------------------- |
+| Meaning        | Hides **implementation details** | Hides **data (variables)**                           |
+| Focus          | **What** an object can do        | **How** data is protected                            |
+| Purpose        | Reduce complexity                | Protect data                                         |
+| Achieved using | Abstract classes, interfaces     | Access specifiers (`private`, `protected`, `public`) |
+| Level          | Design level                     | Implementation level                                 |
+| Example        | `virtual void draw() = 0;`       | `private int balance;`                               |
